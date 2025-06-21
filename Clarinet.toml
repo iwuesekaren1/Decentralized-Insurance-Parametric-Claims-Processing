@@ -1,0 +1,19 @@
+[project]
+name = 'Decentralized-Insurance-Parametric-Claims-Processing'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.parameter-monitoring]
+path = 'contracts/parameter-monitoring.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
